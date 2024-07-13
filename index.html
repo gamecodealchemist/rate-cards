@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    html{
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+    body{
+        background-image: linear-gradient(to right, #000000 , #B3005E, #000000);
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 600px; 
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 70vh;
+        gap: 100px; 
+    }
+    .column{ 
+        display: flex;
+        color: #C8ACD6;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right,#FF204E, #FF204E,midnightblue);
+        border-image-slice: 1;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+        grid-row: span 2;
+        width: 300px;
+        height: 400px;
+        position: relative;
+    }
+    p{
+        text-align: center;
+        font-size: 0.9rem;
+        color: azure;
+
+        
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        background: linear-gradient( #FF204E, #FF204E,midnightblue);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+
+    }
+    .button{
+        
+        background-color: #00224D;
+        border-radius: 1rem !important;
+        height: 3rem;
+        color: whitesmoke;
+        border: transparent;
+        font-weight: 500;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        
+    }
+    .button:hover{
+        background-color: red;
+        color: whitesmoke;
+    }
+    .button:active{
+        background-color: whitesmoke;
+        color: black;
+    }
+    .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+
+    }
+    .hi{
+        font-size: 0.8rem !important;
+        color: #A6F6FF;
+    }
+    .trap{
+	height: 15px;
+	width: 125px;
+    rotate: 90deg;
+    position: absolute;
+    left: 239px;
+    top: 205px;
+    background: linear-gradient(to right,#FF204E, #FF204E,midnightblue);
+    border-image-slice:1;
+    }
+    @media (max-width:600px){
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 5px
+        }
+        .column{
+            width: 500px;
+            height: auto;
+            padding: 10px;
+        }
+        .trap{
+            display: none;
+        }
+        p{
+            font-size: 0.5rem;
+            padding: 0px;
+        }
+        h2{
+            font-size: 1rem;
+        }
+        .button{
+            height: 2rem;
+            font-size: 0.5rem;
+        }
+    }   
+
+</style>
+<body>
+    <div class="intro">
+        <img src="./netflix-logo-png-clip-art-removebg-preview.png" alt="netflix" class="img" />
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>$10 <span class="hi">/mo</span> </h2>
+                 <p>Enjoy your first month of Nete.</p>
+                <p> Get the next three months scount.</p>
+                <p>Access to Netflix's prD aaneously.</p>
+                <p>Early accesst only available to ser</p>
+                <p>d</p>
+                <button type="button" class="button">Request Access</button>
+                <div class="trap"></div>
+        </div>
+        <div class="column">
+            <h2>$20<span class="hi">/mo</span></h2>
+                <p>Access to exclusive contentmentaries.</p>
+                <p>Get the opportunity to wachelor.</p>
+                <p>Unlock access to new shows able.</p>
+                <p>e</p>
+                <p>e</p>
+                <button type="button" class="button">Request Access</button>
+                <div class="trap"></div>
+        </div>
+        <div class="column">
+            <h2>$30<span class="hi">/mo</span></h2>
+                <p>Stay up-to-date with the se catalog.</p>
+                <p>Discover new filmsvailable on Netflix.</p>
+                <p>Get exclusive access to new  available.</p>
+                <p>o</p>
+                <p>e</p>
+                <button type="button" class="button">Request Access</button>
+                <div class="trap"></div>
+                
+        </div>
+</body>
+</html>
